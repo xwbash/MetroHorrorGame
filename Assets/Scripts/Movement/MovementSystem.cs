@@ -82,6 +82,7 @@ namespace Movement
         public override void MovePlayer(Vector2 positionInput)
         {
             CheckSprint();
+            
             _targetPosition = positionInput.x * transform.right + transform.up * ApplyGravity() + positionInput.y * transform.forward;
             _playerCharacterController.Move(new Vector3(_targetPosition.x * Time.deltaTime * m_playerSpeed, _targetPosition.y,_targetPosition.z * Time.deltaTime * m_playerSpeed));
         }
