@@ -118,7 +118,7 @@ namespace Movement
 
         private float ApplyGravity()
         {
-            _velocityValue += GravityValue * m_gravityMultiplier * Time.deltaTime;
+            _velocityValue = GravityValue * m_gravityMultiplier * Time.deltaTime;
             return _velocityValue;
         }
 
