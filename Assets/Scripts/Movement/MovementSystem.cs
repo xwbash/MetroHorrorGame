@@ -105,7 +105,7 @@ namespace Movement
 
         private void IncreaseSpeed()
         {
-            var targetValue = m_playerSpeed * _sprintMultiplier;
+            var targetValue = _defaultSpeed * _sprintMultiplier;
             DOTween.To(x => m_playerSpeed = x, m_playerSpeed, targetValue, 0.8f)
                 .OnUpdate(OnRunning);
         }
