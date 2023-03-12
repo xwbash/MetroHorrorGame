@@ -46,7 +46,10 @@ namespace Animation
 
         public void SetIsMoving(bool isMoving)
         {
-            _animator.SetBool(IsMoving, isMoving);
+            if (_animator != null)
+            {
+                _animator.SetBool(IsMoving, isMoving);    
+            }
         }
 
     }
