@@ -21,11 +21,8 @@ namespace Movement.Inputs
         {
             var inputPosition = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             
-            if (inputPosition != Vector2.zero)
-            {
-                InputEvent.Invoke(inputPosition);    
-            }
-            
+
+            InputEvent.Invoke(inputPosition);
         }
     }
 }

@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Animation;
 using DG.Tweening;
 using Sirenix.OdinInspector;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Movement
@@ -54,6 +56,7 @@ namespace Movement
         [SerializeField] private float _sprintMultiplier;
         private float _defaultSpeed;
         private float _velocityValue;
+        private AnimationController _animatorController;
         private Vector3 _targetPosition = new Vector3(0, 0, 0);
         
 
@@ -68,9 +71,11 @@ namespace Movement
 
         private void Start()
         {
+            _animatorController = GetComponent<AnimationController>();
             _defaultSpeed = m_playerSpeed;
             _legTransform = m_characterPoint.Find(x => x.CharacterBodyPart == CharacterBodyPart.Leg).Transform;
             _playerCharacterController = gameObject.AddComponent<CharacterController>();
+            _playerCharacterController.center = Vector3.up;
             MovePlayer(Vector3.zero);
         }
 
@@ -82,7 +87,7 @@ namespace Movement
         public override void MovePlayer(Vector2 positionInput)
         {
             CheckSprint();
-            
+            _animatorController.SetIsMoving(positionInput != Vector2.zero);
             _targetPosition = positionInput.x * transform.right + transform.up * ApplyGravity() + positionInput.y * transform.forward;
             _playerCharacterController.Move(new Vector3(_targetPosition.x * Time.deltaTime * m_playerSpeed, _targetPosition.y,_targetPosition.z * Time.deltaTime * m_playerSpeed));
         }
