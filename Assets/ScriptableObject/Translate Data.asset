@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920d33da5b0d43b7ab6a72f34eb22393, type: 3}
+  m_Name: Translate Data
+  m_EditorClassIdentifier: 
+  LanguageList:
+  - ListOfLanguages:
+    - LanguageCategory: 0
+      TranslatedWord: hello
+    - LanguageCategory: 1
+      TranslatedWord: ciao
+    - LanguageCategory: 2
+      TranslatedWord: "\u043F\u0440\u0438\u0432\u0435\u0442"
+    - LanguageCategory: 3
+      TranslatedWord: "\u3053\u3093\u306B\u3061\u306F"
+    - LanguageCategory: 4
+      TranslatedWord: merhaba
+    - LanguageCategory: 5
+      TranslatedWord: hallo
+    - LanguageCategory: 6
+      TranslatedWord: hola
