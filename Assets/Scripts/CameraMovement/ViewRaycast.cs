@@ -23,11 +23,13 @@ namespace CameraMovement
 
                 if (interactable != null)
                 {
-                    Debug.Log("Interacted");
-                    //_interactable.HideInteraction();
-                    //_interactable = interactable;
-                    //_interactable.ShowInteraction();
+                    _interactable = interactable;
+                    _interactable.ShowInteraction();
                 }
+            }
+            else
+            {
+                _interactable?.HideInteraction();
             }
         }
     }

@@ -5,6 +5,7 @@ namespace Interfaces
 {
     public interface IInteractable
     {
+        
         public virtual void ShowInteraction()
         {
         
