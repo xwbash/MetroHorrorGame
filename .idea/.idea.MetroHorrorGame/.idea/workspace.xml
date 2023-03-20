@@ -47,10 +47,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24432">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="24432" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -75,6 +75,7 @@
       <workItem from="1679002185025" duration="3572000" />
       <workItem from="1679142969392" duration="12151000" />
       <workItem from="1679244711634" duration="412000" />
+      <workItem from="1679338159910" duration="300000" />
     </task>
     <servers />
   </component>
@@ -86,5 +87,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/EvolveGames/RealisticFPSController/Scripts/ItemChange.cs</url>
+          <line>30</line>
+          <properties documentPath="D:\Unity Projects\HorrorGameX\MetroHorrorGame\Assets\EvolveGames\RealisticFPSController\Scripts\ItemChange.cs" initialLine="30" containingFunctionPresentation="method 'Construct'">
+            <startOffsets>
+              <option value="982" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1029" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,6 +26,11 @@ namespace EvolveGames
         private void Construct(ItemChangeUI itemChangeUI)
         {
             _itemChangeUI = itemChangeUI;
+            
+            ChangeItemInt = ItemIdInt;
+            _itemChangeUI.ChangeItem(ItemLogos[ItemIdInt]);
+            MaxItems = Items.Length - 1;
+            StartCoroutine(ItemChangeObject());
         }
         
         private void Start()
@@ -36,10 +41,6 @@ namespace EvolveGames
             _itemChangeUI.SetColor(OpacityColor);
             ItemChangeLogo = false;
             DefiniteHide = false;
-            ChangeItemInt = ItemIdInt;
-            _itemChangeUI.ChangeItem(ItemLogos[ItemIdInt]);
-            MaxItems = Items.Length - 1;
-            StartCoroutine(ItemChangeObject());
         }
         private void Update()
         {
