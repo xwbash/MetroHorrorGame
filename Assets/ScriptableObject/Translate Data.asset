@@ -14,17 +14,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LanguageList:
   - ListOfLanguages:
-    - LanguageCategory: 0
-      TranslatedWord: hello
     - LanguageCategory: 1
-      TranslatedWord: ciao
+      TranslatedWord: hello
     - LanguageCategory: 2
-      TranslatedWord: "\u043F\u0440\u0438\u0432\u0435\u0442"
+      TranslatedWord: ciao
     - LanguageCategory: 3
-      TranslatedWord: "\u3053\u3093\u306B\u3061\u306F"
+      TranslatedWord: "\u043F\u0440\u0438\u0432\u0435\u0442"
     - LanguageCategory: 4
-      TranslatedWord: merhaba
+      TranslatedWord: "\u3053\u3093\u306B\u3061\u306F"
     - LanguageCategory: 5
-      TranslatedWord: hallo
+      TranslatedWord: merhaba
     - LanguageCategory: 6
+      TranslatedWord: hallo
+    - LanguageCategory: 7
       TranslatedWord: hola
+  - ListOfLanguages:
+    - LanguageCategory: 1
+      TranslatedWord: START
+    - LanguageCategory: 2
+      TranslatedWord: INIZIO
+    - LanguageCategory: 3
+      TranslatedWord: "\u041D\u0410\u0427\u0418\u041D\u0410\u0422\u042C"
+    - LanguageCategory: 4
+      TranslatedWord: "\u59CB\u3081\u308B"
+    - LanguageCategory: 5
+      TranslatedWord: "BA\u015ELA"
+    - LanguageCategory: 6
+      TranslatedWord: START
+    - LanguageCategory: 7
+      TranslatedWord: COMENZAR
+  - ListOfLanguages:
+    - LanguageCategory: 1
+      TranslatedWord: SETTINGS
+    - LanguageCategory: 2
+      TranslatedWord: IMPOSTAZIONI
+    - LanguageCategory: 3
+      TranslatedWord: "\u041D\u0410\u0421\u0422\u0420\u041E\u0419\u041A\u0418"
+    - LanguageCategory: 4
+      TranslatedWord: "\u8A2D\u5B9A"
+    - LanguageCategory: 5
+      TranslatedWord: AYARLAR
+    - LanguageCategory: 6
+      TranslatedWord: EINSTELLUNGEN
+    - LanguageCategory: 7
+      TranslatedWord: AJUSTES
+  - ListOfLanguages:
+    - LanguageCategory: 1
+      TranslatedWord: QUIT
+    - LanguageCategory: 2
+      TranslatedWord: ESENTATO
+    - LanguageCategory: 3
+      TranslatedWord: "\u041F\u041E\u041A\u0418\u0414\u0410\u0422\u042C"
+    - LanguageCategory: 4
+      TranslatedWord: "\u3084\u3081\u308B"
+    - LanguageCategory: 5
+      TranslatedWord: AYARLAR
+    - LanguageCategory: 6
+      TranslatedWord: "AUFH\xD6REN"
+    - LanguageCategory: 7
+      TranslatedWord: ABANDONAR

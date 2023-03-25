@@ -33,6 +33,7 @@ namespace TranslateData
         Japanese = 4,
         Turkish = 5,
         German = 6,
-        Spanish = 7
+        Spanish = 7,
+        France = 8
     }
 }

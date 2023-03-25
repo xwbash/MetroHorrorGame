@@ -12,8 +12,11 @@ namespace Manager
         private void Construct(ZenjectSceneLoader zenjectSceneLoader)
         {
             _zenjectSceneLoader = zenjectSceneLoader;
-            _zenjectSceneLoader.LoadSceneAsync("GameScene", LoadSceneMode.Additive);
+        }
 
+        public void LoadGameScene()
+        {
+            _zenjectSceneLoader.LoadSceneAsync("GameScene", LoadSceneMode.Additive);
         }
     }
 }

@@ -13,7 +13,11 @@ namespace Controllers
         private void Construct(TranslateTextManager translateTextManager)
         {
             _textToTranslate = GetComponent<TMP_Text>();
-           _textToTranslate.text = translateTextManager.GetAndTranslateText(_textToTranslate.text);
+            var translateText = translateTextManager.GetAndTranslateText(_textToTranslate.text);
+            if (translateText != "")
+            {
+                _textToTranslate.text = translateText;
+            }
         }
     }
 }
